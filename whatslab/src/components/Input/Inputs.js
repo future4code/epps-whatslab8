@@ -5,38 +5,33 @@ const DivInput = styled.div`
     display: flex;
     justify-content:center;
     padding: 5px;
+    width: 90%;
 `
 const InputUserName = styled.input`
     margin-right:8px;
-    width:35%;
+    width:25%;
+    margin-right: 5px;
+    padding: 15px 20px;
 `
 const InputMessage = styled.input`
     margin-right:10px;
-    width: 50%;
+    width: 60%;
+    padding: 15px 20px;
+`
+const Button = styled.button `
+    width: 20%;
+    
 `
 
 
 export class Inputs extends React.Component {
-    state = {
-        valueUser: '',
-        valueMessage: ''
-    }
-
-
-onChangeUser = (event) => {
-    this.setState ({valueUser: event.target.value})
-}
-
-onChangeMessage = (event) => {
-    this.setState ({valueMessage: event.target.value})
-}
 
 render () {
     return (
         <DivInput>
-            <InputUserName placeholder='Usuário' value={this.state.valueUser} onChange={this.onChangeUser}></InputUserName>
-            <InputMessage placeholder='Mensagem' value={this.state.valueMessage} onChange={this.onChangeMessage}></InputMessage>
-            <button>Enviar</button>
+            <InputUserName placeholder='Usuário' value={this.props.UserInput} onChange={this.props.onChangeUser}></InputUserName>
+            <InputMessage placeholder='Mensagem' value={this.props.MessageInput} onChange={this.props.onChangeMessage}></InputMessage>
+            <Button onClick={this.props.sendMessage} >Enviar Mensagem</Button>
         </DivInput>
     )
 }
