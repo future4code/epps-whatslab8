@@ -50,7 +50,7 @@ export class Messages extends React.Component {
     render (){
         const messageList = this.state.messages.map((message) => {
             return (
-                <MessagesP>{message.user}: {message.message}</MessagesP>
+                <MessagesP><strong>{message.user}:</strong> {message.message}</MessagesP>
             )            
         })
 
