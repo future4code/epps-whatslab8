@@ -12,7 +12,7 @@ const InputUserName = styled.input`
 `
 const InputMessage = styled.input`
     margin-right:10px;
-    width: 100%;
+    width: 50%;
 `
 
 
