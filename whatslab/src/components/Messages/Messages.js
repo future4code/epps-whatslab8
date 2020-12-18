@@ -3,19 +3,21 @@ import styled from 'styled-components'
 import Inputs from '../Input/Inputs'
 
 const ContainerMessage = styled.div`
-    height: 90vh;
+    height: 99.7vh;
     display:flex;
-    width: 800px;
+    width: 600px;
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
     border: 1px solid #000;
-    margin: 2% auto 0 auto;
+    margin: 0 auto 0 auto;
 `
 
 const MessagesP = styled.p`
     display: flex;
     text-align: left;
+    margin-left: 5%;
+    margin-bottom: 5%;
 `
 
 export class Messages extends React.Component {
