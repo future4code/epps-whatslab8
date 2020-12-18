@@ -5,7 +5,7 @@ import Inputs from './components/Input/Inputs'
 function App() {
   return (
     <div className="App">
-      <Inputs />
+      <Messages />
     </div>
   );
 }
