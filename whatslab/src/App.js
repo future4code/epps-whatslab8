@@ -21,13 +21,7 @@ import styled from 'styled-components'
         top: -50px;
         max-width: max;
         height: 80vh;
-        /* overflow:auto;  */
       `
-
-      // const MainContact = styled.div`
-      //   background-color: blue;
-      // `;
-
       const MainMessage = styled.div`
         background-color: #ededed;
         width: 800px;
@@ -38,10 +32,8 @@ function App() {
   return (
       <MainBackground>
         <DivSection>
-          {/* <LogoWpp /> */}
         </DivSection>
         <WppWindowMain>
-          {/* <MainContact>Contato em breve</MainContact> */}
           <Messages />
         </WppWindowMain>
       </MainBackground>
