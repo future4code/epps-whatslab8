@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import Inputs from '../Input/Inputs'
 
 const ContainerMessage = styled.div`
-    height: 99.7vh;
     display:flex;
     width: 600px;
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
-    border: 1px solid #000;
-    margin: 0 auto 0 auto;
+    background: #ededed;
+    border-radius: 3px;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,.19), 0 12px 15px 0 rgba(0,0,0,.24);
+
 `
 
 const MessagesP = styled.p`
