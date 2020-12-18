@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from'styled-components'
 
+
+const DivMainInput = styled.div`
+    width: 100%;
+    background: #fff;
+`
+
 const DivInput = styled.div`
     display: flex;
     justify-content:center;
-    width: 90%;
-    margin-right: 3%;
-    margin-bottom: 2%;
-    margin-left: 5%;
+    padding: 12px;
 `
 const InputUserName = styled.input`
     margin-right:8px;
@@ -22,19 +25,25 @@ const InputMessage = styled.input`
 `
 const Button = styled.button `
     width: 20%;
-    background-color: #EFEFEF;
-    font-size: large;    
+    font-size: large;   
+    color: #fff;
+    background: #00bfa5;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none; 
 `
 
 export class Inputs extends React.Component {
 
 render () {
     return (
-        <DivInput>
-            <InputUserName placeholder='Usuário' value={this.props.UserInput} onChange={this.props.onChangeUser}></InputUserName>
-            <InputMessage placeholder='Mensagem' value={this.props.MessageInput} onChange={this.props.onChangeMessage}></InputMessage>
-            <Button onClick={this.props.sendMessage}><strong>Enviar</strong></Button>
-        </DivInput>
+        <DivMainInput>
+            <DivInput>
+                <InputUserName placeholder='Usuário' value={this.props.UserInput} onChange={this.props.onChangeUser}></InputUserName>
+                <InputMessage placeholder='Mensagem' value={this.props.MessageInput} onChange={this.props.onChangeMessage}></InputMessage>
+                <Button onClick={this.props.sendMessage}><strong>Enviar</strong></Button>
+            </DivInput>
+        </DivMainInput>
     )
 }
 }
