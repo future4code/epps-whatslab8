@@ -11,6 +11,7 @@ const ContainerMessage = styled.div`
     flex-direction: column;
     border: 1px solid #000;
     margin: 0 auto 0 auto;
+    background-color: #E5DDD5
 `
 
 const MessagesP = styled.p`
