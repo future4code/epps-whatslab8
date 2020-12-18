@@ -7,12 +7,12 @@ import styled from 'styled-components'
       const MainBackground = styled.section`
         width: 100%;
         height: 100vh;
-      `;
+      `
 
       const DivSection = styled.div`
         background-color: #00bfa5;
         height: 150px;
-      `;
+      `
 
       const WppWindowMain = styled.div`
         display: flex;
@@ -20,18 +20,18 @@ import styled from 'styled-components'
         position: relative;
         top: -50px;
         max-width: max;
-        height: 450px;
-        overflow:auto; 
-      `;
+        height: 80vh;
+        /* overflow:auto;  */
+      `
 
       // const MainContact = styled.div`
       //   background-color: blue;
       // `;
 
-      const MainMesage = styled.div`
+      const MainMessage = styled.div`
         background-color: #ededed;
         width: 800px;
-      `;
+      `
 
 
 function App() {
